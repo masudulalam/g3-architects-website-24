@@ -65,6 +65,10 @@ header {
     background: rgba(255, 144, 14, 0.1);
 }
 
+.header-container {
+    padding-top: 50px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -87,6 +91,9 @@ nav ul li a {
 }
 
 /* banner styles */
+.banner {
+    margin-top: 100px;
+}
 .banner-text {
     max-width: 42%;
     margin: 0 auto;
@@ -104,6 +111,7 @@ nav ul li a {
 }
 
 /* responsive styles */
+/* for mobile devices */
 @media screen and (max-width: 576px) {
     .container {
         width: 100%;
@@ -113,6 +121,9 @@ nav ul li a {
     .banner-text {
         margin: 10px;
     }
+    .nav-title {
+        margin-bottom: 40px;
+    }
     nav, nav > ul {
         flex-direction: column;
     }
@@ -121,5 +132,28 @@ nav ul li a {
         max-width: 100%;
         margin: 0;
         text-align: center;
+    }
+}
+/* for tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .container {
+        width: 100%;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .banner-text {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav > ul {
+        margin-bottom: 40px;
     }
 }
