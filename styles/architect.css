@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Work Sans';
+    margin: 0;
 }
 
 body {
@@ -17,30 +18,49 @@ body {
 }
 
 /* shared styles */
+h1 {
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 h3 {
     color: rgb(19, 19, 19);
-    font-size: 2.82em;
+    font-size: 2.82rem;
     font-weight: 700;
 }
 
 .f20-600 {
     color: rgb(114, 114, 114);
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 .f20-400 {
     color: rgb(66, 66, 66);
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
 .f16-400 {
     color: rgb(114, 114, 114);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
 }
 
+.btn-primary {
+    /* Rectangle 1 */
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    border: none;
+    width: 11.25rem;
+    height: 4rem;
+    cursor: pointer; 
+}
+
+/* header styles */
 header {
     background: rgba(255, 144, 14, 0.1);
 }
@@ -51,15 +71,55 @@ nav {
     align-items: center;
 }
 
-nav ul {
+nav > ul {
     display: flex;
     gap: 40px;
 }
 
 nav ul li {
     list-style: none;
+    font-size: 1.12rem; 
+    color: rgb(66, 66, 66);
 }
 
 nav ul li a {
     text-decoration: none;
+}
+
+/* banner styles */
+.banner-text {
+    max-width: 42%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-text p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        max-width: 95%;
+        margin: auto;
+    }
+    .banner-text {
+        margin: 10px;
+    }
+    nav, nav > ul {
+        flex-direction: column;
+    }
+     
+    .banner-text {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
 }
