@@ -156,9 +156,10 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.facts-container p {
+.facts-container .facts-description {
     width: 37%;
 }
+
 .facts-card-container {
     display: flex;
     justify-content: space-around;
@@ -196,7 +197,8 @@ main {
 
     nav,
     nav>ul,
-    .teams-container {
+    .teams-container,
+    .facts-card-container {
         flex-direction: column;
     }
 
@@ -209,6 +211,15 @@ main {
     .teams-img-container {
         grid-template-columns: 1fr;
     }
+
+    .facts-container .facts-description {
+        width: 100%;
+    }
+
+    .facts-card-container {
+        gap: 1.25rem;
+    }
+
 }
 
 /* for tablet or medium devices */
@@ -233,5 +244,13 @@ main {
 
     nav>ul {
         margin-bottom: 40px;
+    }
+
+    .facts-card-container {
+        gap: 5px;
+    }
+
+    .facts-container .facts-description {
+        width: 70%;
     }
 }
