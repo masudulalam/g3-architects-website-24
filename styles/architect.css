@@ -57,7 +57,7 @@ h3 {
     border: none;
     width: 11.25rem;
     height: 4rem;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 /* header styles */
@@ -75,14 +75,14 @@ nav {
     align-items: center;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
     gap: 40px;
 }
 
 nav ul li {
     list-style: none;
-    font-size: 1.12rem; 
+    font-size: 1.12rem;
     color: rgb(66, 66, 66);
 }
 
@@ -94,6 +94,7 @@ nav ul li a {
 .banner {
     margin-top: 100px;
 }
+
 .banner-text {
     max-width: 42%;
     margin: 0 auto;
@@ -111,7 +112,7 @@ nav ul li a {
 }
 
 /* main styles */
-main{
+main {
     width: 100%;
     max-width: 75%;
     margin: 0 auto;
@@ -145,6 +146,37 @@ main{
     color: rgb(114, 114, 114);
 }
 
+/* facts styles */
+.facts-container {
+    margin-top: 8rem;
+    margin-bottom: 11rem;
+}
+
+.facts-container h3 {
+    margin-bottom: 1.5rem;
+}
+
+.facts-container p {
+    width: 37%;
+}
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+}
+
+.facts-card-container .card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    text-align: center;
+    padding: 3.75rem 2.25rem;
+}
+
+.facts-card-container .card-stats {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 /* responsive styles */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
@@ -162,10 +194,12 @@ main{
         margin-bottom: 40px;
     }
 
-    nav, nav > ul, .teams-container {
+    nav,
+    nav>ul,
+    .teams-container {
         flex-direction: column;
     }
-     
+
     .banner-text {
         max-width: 100%;
         margin: 0;
@@ -176,6 +210,7 @@ main{
         grid-template-columns: 1fr;
     }
 }
+
 /* for tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
     .container {
@@ -184,7 +219,8 @@ main{
         margin: auto;
     }
 
-    nav, .teams-container {
+    nav,
+    .teams-container {
         flex-direction: column;
         gap: 30px;
     }
@@ -195,7 +231,7 @@ main{
         text-align: center;
     }
 
-    nav > ul {
+    nav>ul {
         margin-bottom: 40px;
     }
 }
