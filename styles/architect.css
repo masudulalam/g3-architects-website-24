@@ -199,6 +199,7 @@ main {
     Font-size: 4rem;
     text-align: center;
 }
+
 .ten-year-badge p {
     color: rgb(255, 255, 255);
     Font-weight: 500;
@@ -255,6 +256,15 @@ main {
     margin-bottom: 8rem;
 }
 
+/* footer styles */
+footer {
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    text-align: center;
+    padding: 3rem 0;
+    /* margin-bottom: 13rem; */
+}
+
 /* responsive styles */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
@@ -294,9 +304,11 @@ main {
     .feature-image img {
         width: 100%;
     }
+
     .ten-year-badge {
         display: none;
     }
+
     .facts-container .facts-description {
         width: 100%;
     }
@@ -347,6 +359,10 @@ main {
 
     .facts-container .facts-description {
         width: 70%;
+    }
+
+    .feature-image img {
+        width: 100%;
     }
 
     .ten-year-badge {
