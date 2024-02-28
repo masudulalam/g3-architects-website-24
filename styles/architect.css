@@ -184,7 +184,7 @@ main{
         margin: auto;
     }
 
-    nav {
+    nav, .teams-container {
         flex-direction: column;
         gap: 30px;
     }
